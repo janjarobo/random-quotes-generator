@@ -1,44 +1,29 @@
-import { FaFacebook, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-
-const coderData = [
-  {
-    id: 1,
-    icon: 'FaFacebook',
-    link: 'https://www.facebook.com/jayvee.estilo/',
-  },
-  {
-    id: 2,
-    icon: 'FaTwitter',
-    link: 'https://twitter.com/janjarobo',
-  },
-  {
-    id: 3,
-    icon: 'FaLinkedinIn',
-    link: 'https://www.linkedin.com/in/jayvee-estilo/',
-  },
-];
+import { FaFacebook, FaTwitter, FaLinkedinIn, FaReact } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer>
-      <p>by Jay Vee Estilo</p>
+      <p>
+        by Jay Vee Estilo, code with <FaReact />
+      </p>
       <div className='socialLinks'>
         Connect with me
-        <div>
+        <br />
+        <span>
           <a href='https://www.facebook.com/jayvee.estilo/' target='_blank'>
             <FaFacebook />
           </a>
-        </div>
-        <div>
+        </span>
+        <span>
           <a href='https://twitter.com/janjarobo' target='_blank'>
             <FaTwitter />
           </a>
-        </div>
-        <div>
+        </span>
+        <span>
           <a href='https://www.linkedin.com/in/jayvee-estilo/' target='_blank'>
             <FaLinkedinIn />
           </a>
-        </div>
+        </span>
       </div>
     </footer>
   );
