@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const QuoteGenerator = ({ quote, newQuote }) => {
   const { author, content } = quote;
-  const tweetQuote = `https://twitter.com/intent/tweet?text=${content} by ${author}`;
+  const tweetQuote = `https://twitter.com/intent/tweet?text="${content}" by ${author}`;
   return (
     <section id='quote-box' className='quote-box'>
       <div id='quote' className='quote-holder'>
