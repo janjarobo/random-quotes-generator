@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Spinner from 'react-bootstrap/Spinner';
 import { useEffect, useState } from 'react';
+
 //components
 import Title from './components/Title';
 import QuoteGenerator from './components/QuoteGenerator';

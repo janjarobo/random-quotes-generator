@@ -1,10 +1,18 @@
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import { IoLogoTwitter } from 'react-icons/io';
-import { Button } from 'react-bootstrap';
+import { Button, Spinner } from 'react-bootstrap';
 
 const QuoteGenerator = ({ quote, newQuote }) => {
   const { author, content } = quote;
   const tweetQuote = `https://twitter.com/intent/tweet?text="${content}" by ${author}`;
+
+  if (!author) {
+    return (
+      <>
+        <Spinner animation='border' />
+      </>
+    );
+  }
   return (
     <section id='quote-box' className='quote-box'>
       <div id='quote' className='quote-holder'>
